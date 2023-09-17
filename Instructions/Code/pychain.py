@@ -143,7 +143,7 @@ class PyChain:
 # Adds the cache decorator for Streamlit
 
 
-@st.cache_data
+@st.cache_resource
 def setup():
     print("Initializing Chain")
     return PyChain([Block("Genesis", 0)])
